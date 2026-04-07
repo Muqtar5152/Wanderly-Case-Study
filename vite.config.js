@@ -5,6 +5,7 @@ import path from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/Wanderly-Case-Study/',
   logLevel: 'error', // Suppress warnings, only show errors
   plugins: [
     base44({
