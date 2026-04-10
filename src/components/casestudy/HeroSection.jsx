@@ -1,4 +1,5 @@
 export default function HeroSection() {
+  const home = new URL("../../assets/wireframes/home.png", import.meta.url).href;
   const chips = ["12 Weeks", "Figma + Miro + Google Forms", "Mobile App · AI/UX"];
   const roles = ["User Research", "Information Architecture", "Wireframes", "Visual Design", "Prototyping", "Usability Testing"];
 
@@ -40,8 +41,12 @@ export default function HeroSection() {
         </div>
 
         <div className="md:w-[40%] w-full flex justify-center">
-          <div className="w-[200px] h-[400px] rounded-[32px] border-2 border-wanderly-primary/40 bg-wanderly-primary/8 flex items-center justify-center">
-            <span className="text-wanderly-primary font-dm text-[12px]">App Preview</span>
+          <div className="w-[180px] sm:w-[200px] md:w-[220px] rounded-[32px] overflow-hidden border-2 border-wanderly-primary/40 shadow-2xl" style={{aspectRatio: '9/18'}}>
+            <img
+              src={home}
+              alt="Wanderly Home Screen"
+              className="w-full h-full object-cover object-top"
+            />
           </div>
         </div>
       </div>

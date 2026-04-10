@@ -1,3 +1,6 @@
+export default function Card() {
+  return null;
+}
 import * as React from "react"
 
 import { cn } from "@/lib/utils"

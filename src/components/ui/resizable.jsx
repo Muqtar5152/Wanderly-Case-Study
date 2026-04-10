@@ -1,3 +1,6 @@
+export default function Resizable() {
+  return null;
+}
 "use client"
 
 import { GripVertical } from "lucide-react"

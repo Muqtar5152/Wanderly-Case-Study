@@ -1,48 +1,29 @@
 import React from 'react';
-import { AlertCircle, LogIn, Mail } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from '@/components/ui/card';
 
 const UserNotRegisteredError = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-slate-50 p-4">
-      <Card className="max-w-md w-full shadow-lg border-red-100">
-        <CardHeader className="text-center pb-2">
-          <div className="mx-auto w-12 h-12 bg-red-50 rounded-full flex items-center justify-center mb-4">
-            <AlertCircle className="w-8 h-8 text-red-500" />
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-white to-slate-50">
+      <div className="max-w-md w-full p-8 bg-white rounded-lg shadow-lg border border-slate-100">
+        <div className="text-center">
+          <div className="inline-flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-orange-100">
+            <svg className="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+            </svg>
           </div>
-          <CardTitle className="text-2xl font-bold text-slate-900">Access Denied</CardTitle>
-          <CardDescription className="text-slate-500">
-            You are not registered in the system.
-          </CardDescription>
-        </CardHeader>
-        <CardContent className="space-y-4 pt-4">
-          <p className="text-sm text-slate-600 text-center leading-relaxed">
-            It seems your account hasn't been authorized for this application yet. 
-            Please contact your administrator or sign up with a registered email address.
+          <h1 className="text-3xl font-bold text-slate-900 mb-4">Access Restricted</h1>
+          <p className="text-slate-600 mb-8">
+            You are not registered to use this application. Please contact the app administrator to request access.
           </p>
-          <div className="bg-slate-100 p-3 rounded-lg flex items-center space-x-3">
-            <Mail className="w-5 h-5 text-slate-400" />
-            <span className="text-sm font-medium text-slate-700">support@wanderly.ai</span>
+          <div className="p-4 bg-slate-50 rounded-md text-sm text-slate-600">
+            <p>If you believe this is an error, you can:</p>
+            <ul className="list-disc list-inside mt-2 space-y-1">
+              <li>Verify you are logged in with the correct account</li>
+              <li>Contact the app administrator for access</li>
+              <li>Try logging out and back in again</li>
+            </ul>
           </div>
-        </CardContent>
-        <CardFooter className="flex flex-col space-y-2 pt-6">
-          <Button 
-            className="w-full bg-slate-900 hover:bg-slate-800 text-white flex items-center justify-center space-x-2"
-            onClick={() => window.location.reload()}
-          >
-            <LogIn className="w-4 h-4" />
-            <span>Try Logging In Again</span>
-          </Button>
-          <Button 
-            variant="ghost" 
-            className="w-full text-slate-500 hover:text-slate-700"
-            onClick={() => window.location.href = '/'}
-          >
-            Go Back Home
-          </Button>
-        </CardFooter>
-      </Card>
+        </div>
+      </div>
     </div>
   );
 };

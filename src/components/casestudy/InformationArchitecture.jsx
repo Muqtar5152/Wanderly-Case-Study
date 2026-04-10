@@ -1,4 +1,4 @@
-    export default function InformationArchitecture() {
+export default function InformationArchitecture() {
   const tree = [
     { parent: "Onboarding", children: ["Signup / Login", "Connect Social"] },
     { parent: "Home Dashboard", children: ["Explore Destinations", "Trending Deals", "Search"] },

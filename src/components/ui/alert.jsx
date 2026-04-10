@@ -1,3 +1,6 @@
+export default function Alert() {
+  return null;
+}
 import * as React from "react"
 import { cva } from "class-variance-authority";
 

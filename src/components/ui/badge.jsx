@@ -1,3 +1,6 @@
+export default function Badge() {
+  return null;
+}
 import * as React from "react"
 import { cva } from "class-variance-authority";
 

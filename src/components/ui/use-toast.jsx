@@ -1,3 +1,6 @@
+export default function UseToast() {
+  return null;
+}
 // Inspired by react-hot-toast library
 import { useState, useEffect } from "react";
 
