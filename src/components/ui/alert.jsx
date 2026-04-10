@@ -4,7 +4,7 @@ export default function Alert() {
 import * as React from "react"
 import { cva } from "class-variance-authority";
 
-import { cn } from "@/lib/utils"
+import { cn } from ""
 
 const alertVariants = cva(
   "relative w-full rounded-lg border px-4 py-3 text-sm [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-foreground [&>svg~*]:pl-7",
